@@ -1,6 +1,7 @@
 import { useState } from 'react';
 
 export function App() {
+
   const [numero, setNumero] = useState(100);
   const [bool, setBool]= useState (true);
 
@@ -16,7 +17,6 @@ export function App() {
     setBool(true);
   }
 
-  
   function esconder() {
     setBool(false);
   }
@@ -27,6 +27,7 @@ export function App() {
       <h1>numero: {numero}</h1>
 
       <div>
+        
         <button onClick={diminuir}>diminuir</button> 
         <button onClick={aumentar}>aumentar</button> 
 
